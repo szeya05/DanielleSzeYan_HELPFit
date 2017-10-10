@@ -1,0 +1,111 @@
+nav{
+	background-color: #12273b;
+}
+.divider{
+    padding-left:50px;
+    display:inline-block;
+}
+.selectBtn{
+	background-color: white;
+	color: black;
+	border:2px black;
+	padding: 10px 15px 10px;
+	margin-top: 5px;
+	border-radius: 25px;
+}
+#bg{
+	background-color: #5B748C;
+	color:#FFF;
+	text-align: center;
+	font-family: Quicksand;
+}
+label {
+    display: inline-block;
+    width:150px;
+    text-align: left;
+}
+a:visited {
+    text-decoration: none;
+    color: #black;
+}
+#search{
+	margin-top: 20px;
+	padding:5px 10px;
+	display:inline-block;
+}
+#searchbtn{
+	color: white;
+	padding: 7px 10px;
+	border: 2px black;
+	background-color: grey;
+	display:inline-block;
+	margin-top:20px;
+}
+.dropdown-toggle{
+	color: #FFF;
+	font-family: "Open Sans Condensed";
+	display: inline-block;
+}
+.dropdown-menu{
+	color: black;
+	font-family: "Open Sans Condensed";
+	font-size: 20px;
+	line-height: 2;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navlink{
+	color: #FFF;
+	font-family: "Open Sans Condensed";
+	font-size: 20px;
+	line-height: 2;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 1px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  position: relative;
+}
+#navhover:hover{
+	color: #22374C;
+}
+#tophover:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+#tophover:before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#tophover:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#bottomhover a:hover{
+  color: #66e0ff;
+  text-decoration: none;
+}
+
+footer{
+  background-color: #12273b;
+  color: #FFF;
+}
