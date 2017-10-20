@@ -7,42 +7,30 @@
   <script src="mainJavaScript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Home</title>
+  <title>MMA</title>
 
   <style>
   div.image {
-    background-image: url('fitpic3.jpg');
+    background-image: url('mmaCover.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
-    min-height:800px;
+    width: 100vw;
+    height: 50vh;
+  }
+  #aboutSports{
+    background-color:  #29293d;
+    color: #FFF;
+  }
 
+  div.group-content{
+    text-align: center;
   }
-  @media screen and (max-width:699px){
-    .mainTitle{font-size: 200%;}
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
-
-  .mainTitle {
-   position: absolute;
-   text-align: center;
-   font-family: "Building";
-   color: white;
-   top: 250px;
-   left: 0;
-   width: 100%;
-   font-size: 700%;
-  }
-  .text {
-  position: absolute;
-  text-align: center;
-  font-family: "Source Sans Pro";
-  color: white;
-  top: 370px;
-  left: 0;
-  width: 100%;
-  font-size: 300%;}
-  </style>
+ </style>
 </head>
 
 <body>
@@ -62,7 +50,7 @@
       <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
       <a class="navlink" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1  " id = "tophover">
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
     <a class="navlink" href = "Fitness.html">Fitness</a>
     </div>
     <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
@@ -75,10 +63,48 @@
 </div>
 </nav>
 
-  <div class = "image">
-    <h1 class = "mainTitle">HELPFit</h1>
-    <P class = "text"> Where fitness goals become a reality</p>
+  <div class = "image"></div>
+
+  <div class="container-fluid" id = "aboutSports">
+  	<div class="row" >
+  		<div class="col-sm-10 offset-sm-1">
+  	<section>
+      <br/>
+  	  <h2>MMA</h2><br/>
+  	  <p><span>Mix up your fitness routine with flexibility and strength-building moves in kickboxing classes.
+        You’ll enjoy high-intensity drills while burning a lot of calories. A cardiovascular workout
+        consisting of jabs, hooks, uppercuts and kicks designed to get you on your way to a leaner
+        body and a healthier state of mind.</span></p>
+      </br>
+  	</section>
+  		</div>
+  	</div>
   </div>
+</br></br>
+
+<div class = "container">
+  <div class = "row">
+    <div class = "col-xs-12 col-sm-12 col-md-6">
+        <img src = "muayThai.jpg" alt = "muay thai pic" width = "450" height = "270">
+        <h3>Muay Thai</h3>
+        <p>Our Muay Thai class covers the ancient art of 8 limbs. This class includes Muay Thai leg
+          kicks, knees, elbows, and clinching.Not only will you improve your
+          core and leg strength, you will also be able to show off your
+          awesome fighthing moves to friends and family!</p>
+    </div>
+    <div class = "col-xs-12 col-sm-12 col-md-6">
+      <div class = "col-content" style = "height: auto;">
+        <img src = "kickboxing.jpg" alt = "kickboxing pic" width = "450" height = "270">
+        <h3>Kickboxing</h3>
+        <p>Aside from building on your skills and technique training from prior classes, this class is designed to teach and practice
+           both the offensive and defensive counter techniques and drills with a partner.
+           Whether you are prepping for competition, learning about self defense or just want
+            to learn more about Kickboxing, this class is for you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</br></br>
 
 <footer>
     <div class = "container">

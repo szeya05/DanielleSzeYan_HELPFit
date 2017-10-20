@@ -5,6 +5,11 @@ a:visited {
     text-decoration: none;
     color: #FFF;
 }
+
+a:active{
+	text-decoration: none;
+	color: #FFF;
+}
 section{
 	text-align:center;
 	margin-bottom: 35px;
@@ -54,12 +59,12 @@ section{
 }
 
 #copy{
-  text-align: center;
-  font-size: 14px;
-
+	text-align: center;
+	font-size: 14px;
 }
 
 footer{
   background-color: #12273b;
   color: #FFF;
+	text-align: center;
 }

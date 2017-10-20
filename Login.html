@@ -7,42 +7,47 @@
   <script src="mainJavaScript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Home</title>
+  <title>Login</title>
 
   <style>
-  div.image {
-    background-image: url('fitpic3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:relative;
-    min-height:800px;
+  #loginContent{
+    text-align: left;
+  }
+  form {
+    border: 3px solid #f1f1f1;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+button a:link, button a:visited{
+  color:white;
+  text-decoration: none;
+}
 
-  }
-  @media screen and (max-width:699px){
-    .mainTitle{font-size: 200%;}
-  }
-
-  .mainTitle {
-   position: absolute;
-   text-align: center;
-   font-family: "Building";
-   color: white;
-   top: 250px;
-   left: 0;
-   width: 100%;
-   font-size: 700%;
-  }
-  .text {
-  position: absolute;
-  text-align: center;
-  font-family: "Source Sans Pro";
-  color: white;
-  top: 370px;
-  left: 0;
-  width: 100%;
-  font-size: 300%;}
-  </style>
+#loginContent a:link, #loginContent a:visited{
+  color: blue;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+}
+ </style>
 </head>
 
 <body>
@@ -62,7 +67,7 @@
       <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
       <a class="navlink" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1  " id = "tophover">
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
     <a class="navlink" href = "Fitness.html">Fitness</a>
     </div>
     <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
@@ -74,11 +79,37 @@
   </div>
 </div>
 </nav>
+</br>
+  <section>
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col-xs-12 col-sm-5 offset-sm-1" id = "loginContent">
+          <h2>HELPFit Login Page</h2>
+          <p>Welcome to HELPFit!</p>
+          <P>By having a HELPFit account,you can manage your membership details online. You can
+            update your contact details, view your training histroy, register for classes,
+            review trainers and much more!</p></br>
+          <h3>New to HELPFit?</h3>
+          <p>You can create a new HELPFit account to access your member account details.&nbsp;
+          <a href = "signUpA1.html">Register here</a></p>
+        </div>
+      <div class = "col-xs-12 col-sm-5">
+        <form action = "">
+          <div class = "container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="email" required>
 
-  <div class = "image">
-    <h1 class = "mainTitle">HELPFit</h1>
-    <P class = "text"> Where fitness goals become a reality</p>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" required>
+            <button type="submit"><a href = "welcomeMember.html">Login</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
+</section>
+
+
 
 <footer>
     <div class = "container">

@@ -7,42 +7,27 @@
   <script src="mainJavaScript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Home</title>
+  <title>Sports</title>
 
   <style>
   div.image {
-    background-image: url('fitpic3.jpg');
+    background-image: url('sportsCover.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
-    min-height:800px;
-
-  }
-  @media screen and (max-width:699px){
-    .mainTitle{font-size: 200%;}
+    width: 100vw;
+    height: 50vh;
   }
 
-  .mainTitle {
-   position: absolute;
-   text-align: center;
-   font-family: "Building";
-   color: white;
-   top: 250px;
-   left: 0;
-   width: 100%;
-   font-size: 700%;
+  div.group-content{
+    text-align: center;
   }
-  .text {
-  position: absolute;
-  text-align: center;
-  font-family: "Source Sans Pro";
-  color: white;
-  top: 370px;
-  left: 0;
-  width: 100%;
-  font-size: 300%;}
-  </style>
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+ </style>
 </head>
 
 <body>
@@ -62,7 +47,7 @@
       <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
       <a class="navlink" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1  " id = "tophover">
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
     <a class="navlink" href = "Fitness.html">Fitness</a>
     </div>
     <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
@@ -75,10 +60,48 @@
 </div>
 </nav>
 
-  <div class = "image">
-    <h1 class = "mainTitle">HELPFit</h1>
-    <P class = "text"> Where fitness goals become a reality</p>
+  <div class = "image"></div>
+
+  <div class="container-fluid">
+  	<div class="row" >
+  		<div class="col-sm-10 offset-sm-1">
+  	<section>
+      <br/>
+      <h2>SPORTS</h2><br/>
+  	  <p><span>Feeling a little bit more sporty? Try out our yoga and spin classes!
+      Something different and fun to try at aside from your usual fitness routine. </span></p>
+      </br></br>
+  	</section>
+  		</div>
+  	</div>
   </div>
+
+<div class = "container">
+  <div class = "row">
+    <div class = "col-xs-12 col-sm-12 col-md-6">
+      <div class = "col-content" style = "height: auto;">
+        <img src = "cycling.jpg" alt = "spin class pic" width = "450" height = "270">
+        <h3>Spin class</h3>
+        <p>Get ready to burn calories and boost your fitness level in this high
+          intensity class, which is sometimes referred to as 'spinning' or 'spin'.
+          Together with an up-beat music and our motivational trainer, push yourself as you cycle your way through
+          multiple terrains designed to improve cardio endurance, lose weight and
+          strengthen your legs and core.</p>
+      </div>
+
+    </div>
+    <div class = "col-xs-12 col-sm-12 col-md-6">
+      <div class = "col-content" style = "height: auto;">
+        <img src = "yoga.jpg" alt = "yoga pic" width = "450" height = "270">
+        <h3>Yoga</h3>
+        <p>Want to relax but still stay in shape? Have a go at our yoga class! Be in one with
+        your mind, body and soul while working on your flexibility and stability. Yoga strengthens, while
+        simultaneously stretching the muscles and focusing the mind, thereby improving mind / body connection. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</br></br>
 
 <footer>
     <div class = "container">

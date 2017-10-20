@@ -4,16 +4,22 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="mainStyle.css">
+  <script src="mainJavaScript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>About Us</title>
 
   <style>
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
   div.image {
     background-image: url('aboutPic.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position:relative;
     width: 100vw;
     height: 50vh;
   }
@@ -41,17 +47,17 @@
       <div class = "col-xs-12 col-sm-1">
         <a href="Home Page.html"><img src = "HELPFitLogo.jpg" alt = "HELPFitLogo" display = "inline-block"></a>
       </div>
-      <div class = "col-xs-12 col-sm-1 col-sm-offset-7" id = "tophover">
+      <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
       <a class="navlink" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-1" id = "tophover">
-    <a class="navlink" href = "#">Fitness</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
+    <a class="navlink" href = "Fitness.html">Fitness</a>
     </div>
-    <div class = "col-xs-12 col-sm-1" id = "tophover">
-    <a class="navlink" href = "#">JoinUs</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
+    <a class="navlink" href = "signUpA1.html">JoinUs</a>
     </div>
-    <div class = "col-xs-12 col-sm-1" id = "tophover">
-    <a class="navlink" href = "#">Login</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
+    <a class="navlink" href = "Login.html">Login</a>
     </div>
   </div>
 </div>
@@ -61,7 +67,7 @@
 
   <div class="container-fluid" id = "aboutRow">
   	<div class="row" >
-  		<div class="col-sm-12">
+  		<div class="col-sm-10 offset-sm-1">
   	<section>
       <br/>
   	  <h2>ABOUT US</h2><br/>
@@ -76,36 +82,44 @@
   <section></br>
     <h2>WHY JOIN US?</h2><br/>
   </section>
+
   <div class = "container">
     <div class = "row">
       <div class = "col-sm-6">
         <div class = "icon-group-content" style = "height: 293px;">
           <img src="https://www.anytimefitness.com/wp-content/uploads/2016/01/icon-support.png" alt="Support" title="Support">
           <h3>Support</h3></br>
-          <p>Every member gets a free, personalized Get Started Plan when they join. Our friendly, professional staff is trained to help you along your fitness journey, no matter how much support you need.</p>
+          <p>Our friendly, professional staff is trained to help you along your fitness journey,
+            no matter how much support you need.</p>
         </div>
       </div>
       <div class = "col-sm-6">
-        <div class = "icon-group-content" style = "height: 293px;">
+        <div class = "icon-group-content" style = "height: 280px;">
           <img src="https://www.anytimefitness.com/wp-content/uploads/2016/01/icon-tools-training.png" alt="Tools &amp; Training" title="Tools &amp; Training"></br>
           <h3>Tools &amp; Training</h3></br>
-          <p>Getting to a healthier place is about more than going to the gym. That’s why we offer personal training and classes when you’re here, and the right tools to keep you on track when you’re not.</p>
+          <p>Getting to a healthier place is about more than going to the gym.
+            That’s why we offer personal and group training here as well as
+           the right tools to keep you on track when you’re not. </p>
         </div>
       </div>
     </div>
     <div class = "row">
       <div class = "col-sm-6">
-        <div class = "icon-group-content" style = "height: 267px;">
+        <div class = "icon-group-content" style = "height: 280px;">
           <img src="https://www.anytimefitness.com/wp-content/uploads/2016/01/icon-convenience.png" alt="Convenience" title="Convenience"></br>
           <h3>Convenience</h3></br>
-          <p>With 24/7 access to more than 3,000 locations worldwide, you're joining the most convenient gym on the planet.</p>
+          <p>As our gym is located near to the Sungai-Buloh MRT line and feeder
+            busses are available within the vicinity, it makes our gym accessible to
+            the public. Hence, you're joining the most convenient gym on the planet.</p>
         </div>
       </div>
       <div class = "col-sm-6">
-        <div class = "icon-group-content" style = "height: 267px;">
+        <div class = "icon-group-content" style = "height: 280px;">
           <img src="https://www.anytimefitness.com/wp-content/uploads/2016/01/icon-community.png" alt="Community" title="Community"></br>
           <h3>Community</h3></br>
-          <p>You’re not just joining a gym. You’re joining a supportive community of like-minded people who are here to give you the encouragement you need.</p>
+          <p>You’re not just joining a regular gym. You’re joining a supportive community
+            of like-minded people who are here to give you the encouragement you need
+            to get through your fitness journey.</p>
         </div>
       </div>
     </div>
@@ -118,9 +132,9 @@
           <h4>Links</h4>
           <ul class = "list-unstyled" id = "bottomhover">
             <li><a href = "About.html">About</a></li>
-            <li><a href = "#">Fitness</a></li>
-            <li><a href = "#">Join Us</a></li>
-            <li><a href = "#">Login</a></li>
+            <li><a href = "Fitness.html">Fitness</a></li>
+            <li><a href = "signUpA1.html">Join Us</a></li>
+            <li><a href = "Login.html">Login</a></li>
           </ul>
         </div>
         <div class = "col-xs-6 col-sm-5">
@@ -131,21 +145,21 @@
         <div class = "col-xs-6 col-sm-4">
           <h4>Find Us On</h4>
           <ul class = "list-unstyled" id = "bottomhover">
-          <a href = "https://www.facebook.com/" class="btn btn-social-icon btn-facebook">
+          <a class="btn btn-social-icon btn-facebook" onclick="facebookLink()">
               <span class="fa fa-facebook"></span>
           </a>
-          <a href = "https://twitter.com/?lang=en"class="btn btn-social-icon btn-twitter">
+          <a class="btn btn-social-icon btn-twitter" onclick="twitterLink()">
             <span class="fa fa-twitter"></span>
           </a>
-          <a href = "https://www.instagram.com/" class="btn btn-social-icon btn-instagram">
+          <a class="btn btn-social-icon btn-instagram" onclick="instagramLink()">
             <span class="fa fa-instagram"></span>
           </a>
         </ul>
         </div>
-        <div class = "col-xs-12">
+        <div class = "col-xs-12 col-sm-12">
           <!--to provide invisible space for webiste-->
           <p style = "padding:10px;"</p>
-          <p>Copyright &copy; HELPFit 2017. All Rights Reserved.</p>
+          <p id = "copy">Copyright &copy; HELPFit 2017. All Rights Reserved.</p>
         </div>
       </div>
     </div>

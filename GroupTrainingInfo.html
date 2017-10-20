@@ -7,42 +7,40 @@
   <script src="mainJavaScript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Home</title>
+  <title>Group Training</title>
 
   <style>
   div.image {
-    background-image: url('fitpic3.jpg');
+    background-image: url('groupPic.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
-    min-height:800px;
+    width: 100vw;
+    height: 60vh;
+  }
+  #groupContent{
+    background-color: #47476b;
+    color: #FFF;
+  }
 
-  }
-  @media screen and (max-width:699px){
-    .mainTitle{font-size: 200%;}
+  div.group-content{
+    text-align: center;
   }
 
-  .mainTitle {
-   position: absolute;
-   text-align: center;
-   font-family: "Building";
-   color: white;
-   top: 250px;
-   left: 0;
-   width: 100%;
-   font-size: 700%;
+  .testing{
+    text-align:center;
   }
-  .text {
-  position: absolute;
-  text-align: center;
-  font-family: "Source Sans Pro";
-  color: white;
-  top: 370px;
-  left: 0;
-  width: 100%;
-  font-size: 300%;}
-  </style>
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+ </style>
 </head>
 
 <body>
@@ -62,7 +60,7 @@
       <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
       <a class="navlink" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1  " id = "tophover">
+    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
     <a class="navlink" href = "Fitness.html">Fitness</a>
     </div>
     <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
@@ -75,10 +73,42 @@
 </div>
 </nav>
 
-  <div class = "image">
-    <h1 class = "mainTitle">HELPFit</h1>
-    <P class = "text"> Where fitness goals become a reality</p>
+  <div class = "image"></div>
+
+  <div class="container-fluid" id = "aboutRow">
+  	<div class="row" >
+  		<div class="col-sm-10 offset-sm-1">
+  	<section>
+      <br/>
+  	  <h2>GROUP TRANING</h2><br/>
+  	  <p><span>Enjoy all the energy, vibe and fun of working out in a group and a great way
+        to make friends! From dance to yoga, our group classes cater to different preferences,
+        fitness disciplines and proficiencies. All our group training sessions are led by only officially
+          certified instructors, so you’re guaranteed that you’re training with
+          only the best!</span></p>
+  	</section>
+  		</div>
+  	</div>
   </div>
+
+    <div class = "container-fluid" id = "groupContent">
+      <br/>
+    <div class = "row">
+      <div class = "col-xs-12 col-sm-4 testing">
+          <a href = "Dance.html"><img src = "dance.jpg" alt = "dance picture" width = "300" height = "190"></a>
+        <h3 align = "middle">Dance</h3>
+      </div>
+      <div class = "col-xs-12 col-sm-4 testing">
+          <a href = "MMA.html"><img src = "MMA.jpg" alt = "MMA picture" width = "300" height = "190"></a>
+        <h3 align = "middle">MMA</h3>
+      </div>
+      <div class = "col-xs-12 col-sm-4 testing">
+          <a href = "Sports.html"><img src = "sport.jpg" alt = "Sports picture" width = "300" height = "190"></a>
+        <h3 align = "middle">Sports</h3>
+      </div>
+    </div></br></br>
+  </div>
+
 
 <footer>
     <div class = "container">
@@ -113,7 +143,7 @@
         </div>
         <div class = "col-xs-12 col-sm-12">
           <!--to provide invisible space for webiste-->
-          <p style = "padding:10px;"</p>
+          <p style = "padding:10px;"></p>
           <p id = "copy">Copyright &copy; HELPFit 2017. All Rights Reserved.</p>
         </div>
       </div>
