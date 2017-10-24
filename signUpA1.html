@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +5,6 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="mainStyle.css">
   <link rel="stylesheet" type="text/css" href="signUpCSS.css">
   <script src="signUpJS.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -23,23 +21,23 @@
   <!--navbar-inverse for reversing the ccolour of the nav menu-->
 
 
-  <nav class="navbar">
+  <nav>
   <div class = "container">
     <div class = "row">
       <div class = "col-xs-12 col-sm-1">
         <a href="Home Page.html"><img src = "HELPFitLogo.jpg" alt = "HELPFitLogo" display = "inline-block"></a>
       </div>
-      <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
-      <a class="navlink" href = "About.html">About</a>
+      <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 ">
+      <a class="navlink"  id = "tophover" href = "About.html">About</a>
       </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "Fitness.html">Fitness</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1">
+    <a class="navlink"  id = "tophover" href = "Fitness.html">Fitness</a>
     </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "signUpA1.html">JoinUs</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1">
+    <a class="navlink" id = "tophover" href = "signUpA1.html">JoinUs</a>
     </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "Login.html">Login</a>
+    <div class = "col-xs-12 col-sm-2 col-lg-1">
+    <a class="navlink" id = "tophover" href = "Login.html">Login</a>
     </div>
   </div>
 </div>
@@ -49,7 +47,7 @@
   <br/>
   <div class="row">
     <div class="formdiv col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-2">
-      <form action = "" id="form" name="form">
+      <form action="signUp.php" method="post" id="form" name="form">
         <div class="hd">
           <h2>Sign Up with Us</h2>
         </div>
@@ -58,14 +56,15 @@
         <input id="fullname" name="fullname" placeholder="Full Name" type="text">
         <input id="email" name="email" placeholder="Email Address" type="text"><br/><br/>
         <p style="text-align:left;"> Joining as </p>
-        <div>
-          <input type="radio" id="memberB" class="btnn" onclick="member()"><div class="choice">Member</div>
-        </div>
-        <div>
-          <input type = "radio" id="trainerB" class="btnn" onclick="trainer()"><div class="choice">Trainer</div>
-        </div>
-
-        <input type="text" name="speciality" placeholder="Speciality" id="speciality" style="display:none;">
+          <label class="radio">
+          <input type="radio"  name="type" class="btnn" onclick="member();" value="member">
+          <div class="btnn" id="memberB"> Member</div>
+        </label>
+          <label class="radio">
+          <input type="radio"  name="type" class="btnn" onclick="trainer();" value="trainer">
+          <div class="btnn" id="trainerB"> Trainer</div>
+        </label>
+        <input type="text" name="specialty" placeholder="Specialty" id="specialty" style="display:none;">
         <div name="level" id="level"style="display:none;">
           <label class="radio">
             <input type = "radio" name="level" value="beginner">
@@ -81,8 +80,7 @@
           </label>
         </div>
         </br><br/>
-
-        <a type = "submit" name = "submit" id="submit">Register</a>
+        <input type="submit" id="submit" name="submit" value="Register"><br>
 		    </form>
   </div>
 </div>
@@ -129,133 +127,3 @@
   </footer>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-  <!--Bootstrap-->
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="mainStyle.css">
-  <link rel="stylesheet" type="text/css" href="signUpCSS.css">
-  <script src="signUpJS.js" type="text/javascript"></script>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <title>Sign Up</title>
-</head>
-
-<body>
-  <!--Include JQuery: necessary for Bootstrap plugins-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!--Include bootstrap library as needed-->
-  <script src="js/bootstrap.min.js"></script>
-  <!--navbar-inverse for reversing the ccolour of the nav menu-->
-
-
-  <nav class="navbar">
-  <div class = "container">
-    <div class = "row">
-      <div class = "col-xs-12 col-sm-1">
-        <a href="Home Page.html"><img src = "HELPFitLogo.jpg" alt = "HELPFitLogo" display = "inline-block"></a>
-      </div>
-      <div class = "col-xs-12 col-sm-2 offset-sm-3 col-lg-1 offset-lg-7 " id = "tophover">
-      <a class="navlink" href = "About.html">About</a>
-      </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "Fitness.html">Fitness</a>
-    </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "signUpA1.html">JoinUs</a>
-    </div>
-    <div class = "col-xs-12 col-sm-2 col-lg-1" id = "tophover">
-    <a class="navlink" href = "Login.html">Login</a>
-    </div>
-  </div>
-</div>
-</nav>
-
-<div class="container-fluid" id="bg">
-  <br/>
-  <div class="row">
-    <div class="formdiv col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-2">
-      <form action="#" id="form" name="form">
-        <div class="hd">
-          <h2>Sign Up with Us</h2>
-        </div>
-        <input id="username" name="username" placeholder="Username" type="text">
-        <input id="password" name="password" placeholder="Password" type="text">
-        <input id="fullname" name="fullname" placeholder="Full Name" type="text">
-        <input id="email" name="email" placeholder="Email Address" type="text"><br/><br/>
-        <p style="text-align:left;"> Joining as </p>
-        <div>
-          <button id="memberB" class="btnn" onclick="member()">Member</button>
-        </div>
-        <div>
-          <button id="trainerB" class="btnn" onclick="trainer()">Trainer</button>
-        </div>
-        <input type="text" name="speciality" placeholder="Speciality" id="speciality" style="display:none;">
-        <div name="level" id="level"style="display:none;">
-          <label class="radio">
-            <input type = "radio" name="level" value="beginner">
-            <div class="choice">Beginner</div>
-          </label>
-          <label class="radio">
-            <input type = "radio" name="level" value="intermediate">
-            <div class="choice">Intermediate</div>
-          </label>
-          <label class="radio">
-            <input type = "radio" name="level" value="expert">
-            <div class="choice">Expert</div>
-          </label>
-        </div>
-        </br><br/>
-        <a href="javascript:%20check_empty()" id="submit">Register</a>
-		    </form>
-  </div>
-</div>
-  <br/>
-
-<footer>
-    <div class = "container">
-      <div class ="row">
-        <div class = "col-xs-5 col-sm-2 col-sm-offset-1">
-          <h4>Links</h4>
-          <ul class = "list-unstyled" id = "bottomhover">
-            <li><a href = "About.html">About</a></li>
-            <li><a href = "Fitness.html">Fitness</a></li>
-            <li><a href = "signUpA1.html">Join Us</a></li>
-            <li><a href = "Login.html">Login</a></li>
-          </ul>
-        </div>
-        <div class = "col-xs-6 col-sm-5">
-          <h4>Our Address</h4>
-          <p>Jalan Semantan, Bukit Damansara, 50490 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia.</P>
-        </div>
-
-        <div class = "col-xs-6 col-sm-4">
-          <h4>Find Us On</h4>
-          <ul class = "list-unstyled" id = "bottomhover">
-          <a class="btn btn-social-icon btn-facebook" onclick="facebookLink()">
-              <span class="fa fa-facebook"></span>
-          </a>
-          <a class="btn btn-social-icon btn-twitter" onclick="twitterLink()">
-            <span class="fa fa-twitter"></span>
-          </a>
-          <a class="btn btn-social-icon btn-instagram" onclick="instagramLink()">
-            <span class="fa fa-instagram"></span>
-          </a>
-        </ul>
-        </div>
-        <div class = "col-xs-12 col-sm-12">
-          <!--to provide invisible space for webiste-->
-          <p style = "padding:10px;"</p>
-          <p id = "copy">Copyright &copy; HELPFit 2017. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
->>>>>>> 5c447c82c1e0a909325998194dc4adde463231c0

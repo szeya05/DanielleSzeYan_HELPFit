@@ -94,14 +94,13 @@ button a:link, button a:visited{
           <a href = "signUpA1.html">Register here</a></p>
         </div>
       <div class = "col-xs-12 col-sm-5">
-        <form action = "">
+        <form action = "login.php" method="post">
           <div class = "container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter username" name="email" required>
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter password" name="psw" required>
-            <button type="submit"><a href = "welcomeMember.html">Login</a></button>
+            <label><b>Email address</b>*</label>
+            <input type="text" placeholder="Enter email adress" name="email">
+            <label><b>Password</b>*</label>
+            <input type="password" placeholder="Enter password" name="password">
+            <button type="submit" name="login">Login</button>
           </div>
         </form>
       </div>
