@@ -83,10 +83,10 @@
             <a href="welcomeTrainer.php"><img src = "HELPFitLogo.jpg" alt = "HELPFitLogo" display = "inline-block"></a>
           </div>
           <div class = "col-sm-2 col-md-1 col-lg-1 col-md-offset-6">
-          <a class="navlink" id = "tophover" href = "loginAbout.html">About</a>
+          <a class="navlink" id = "tophover" href = "loginAbout2.html">About</a>
           </div>
         <div class = "col-sm-4 col-md-1 col-lg-1">
-        <a class="navlink" id = "tophover" href = "loginFitness.html">Fitness</a>
+        <a class="navlink" id = "tophover" href = "loginFitness2.html">Fitness</a>
         </div>
         <div class="col-sm-4 col-md-1 col-lg-2">
           <div class="nav navlink">
