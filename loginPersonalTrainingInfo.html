@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="mainJavaScript.js"></script>
+  <link rel="stylesheet" type="text/css" href="loginMainStyles.css">
+  <link rel="stylesheet" type="text/css" href="settings.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <title>Personal Training</title>
+
+  <style>
+  div.image {
+    background-image: url('http://www.celebrityfitness.com/media/bannerslider/PTPT.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+  }
+  #personal{
+    background-color: #2b2a3f;
+    color: #FFF;
+  }
+
+  div.group-content{
+    text-align: center;
+  }
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  p{
+    font-size: 16px;
+  }
+
+ </style>
+</head>
+<body>
+  <!--Include JQuery: necessary for Bootstrap plugins-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--Include bootstrap library as needed-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--navbar-inverse for reversing the ccolour of the nav menu-->
+
+
+  <nav>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-4 col-md-2 col-lg-2">
+          <a href="welcomeMember.php"><img src = "HELPFitLogo.jpg" alt = "HELPFitLogo" display = "inline-block"></a>
+        </div>
+        <div class = "col-sm-2 col-md-1 col-lg-1 col-md-offset-6">
+        <a class="navlink" id = "tophover" href = "loginAbout.html">About</a>
+        </div>
+      <div class = "col-sm-4 col-md-1 col-lg-1">
+      <a class="navlink" id = "tophover" href = "loginFitness.html">Fitness</a>
+      </div>
+      <div class="col-sm-4 col-md-1 col-lg-2">
+        <div class="nav navlink">
+          <a class="dropdown-toggle" id="tophover" data-toggle="dropdown">Welcome!
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" id="navhover">
+            <li><a href="settings.php">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="Home Page.html"> Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <div class = "image"></div>
+
+  <div class="container-fluid" id = "personal">
+  	<div class="row" >
+  		<div class="col-sm-10 col-sm-offset-1">
+  	<section>
+      <br/>
+  	  <h2><b>PERSONAL TRAINING</b></h2><br/>
+  	  <p><span>Whether you&acute;re new to exercising or a fitness pro, we&acute;re here to provide
+        you with personalized coaching and support inside and outside the club.
+        Our professional programming, tools, and guidance will help you stay on track,
+        reach your goals, and get to a healthier place.</span>
+      </br></br>
+    </section>
+  </div>
+</div>
+</div>
+
+</br></br>
+<section class = "training-icon-group">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-xs-12 col-sm-4">
+        <div class = "col-content" style = "height: auto;">
+          <img src="https://www.anytimefitness.com/wp-content/uploads/2017/03/Personalized.png" alt="Personalized" title="Personalized">
+          <h2><b>Personalized</b></h2></br>
+          <p>With personal training, the focus is on you. We design a program specific to your health and
+            fitness goal and work with you to achieve them.</p>
+        </div>
+      </div>
+      <div class = "col-xs-12 col-sm-4">
+        <div class = "col-content" style = "height: auto;">
+          <img src="https://www.anytimefitness.com/wp-content/uploads/2017/03/Progressive.png" alt="Progressive" title="Progressive">
+          <h2><b>Progressive</b></h2></br>
+          <p>Personal training is ideal if you have specific goals or past injuries you want to work through.
+            This type of training will lead itself to more advanced exercises over time which requires more
+             focused coaching. We begin to introduce lower repetition ranges and focus on strength goals.</p>
+        </div>
+      </div>
+      <div class = "col-xs-12 col-sm-4">
+        <div class = "col-content" style = "height: auto;">
+          <img src="https://www.anytimefitness.com/wp-content/uploads/2017/03/Accountability.png" alt="Accountability" title="Accountability">
+          <h2><b>Accountability</b></h2></br>
+          <p>When working together, your certified personal trainer will keep you
+            accountable to achieving your goals and set new ones to keep you challenged.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class = "container">
+      <div class ="row">
+        <div class = "col-xs-5 col-sm-2 col-sm-offset-1">
+          <h4>Links</h4>
+          <ul class = "list-unstyled" id = "bottomhover">
+            <li><a href = "loginAbout.html">About</a></li>
+            <li><a href = "loginFitness.html">Fitness</a></li>
+          </ul>
+        </div>
+        <div class = "col-xs-6 col-sm-5">
+          <h4>Our Address</h4>
+          <p>Jalan Semantan, Bukit Damansara, 50490 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia.</P>
+        </div>
+
+        <div class = "col-xs-6 col-sm-4">
+          <h4>Find Us On</h4>
+          <ul class = "list-unstyled" id = "bottomhover">
+          <a class="btn btn-social-icon btn-facebook" onclick="facebookLink()">
+              <span class="fa fa-facebook"></span>
+          </a>
+          <a class="btn btn-social-icon btn-twitter" onclick="twitterLink()">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a class="btn btn-social-icon btn-instagram" onclick="instagramLink()">
+            <span class="fa fa-instagram"></span>
+          </a>
+        </ul>
+        </div>
+        <div class = "col-xs-12 col-sm-12">
+          <!--to provide invisible space for webiste-->
+          <p style = "padding:10px;"</p>
+          <p id = "copy">Copyright &copy; HELPFit 2017. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
